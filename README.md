@@ -1,8 +1,8 @@
-# SASS_Starter_Pack
+# wp_pool_photography
 SASS quick starter pack
 
 ## Quick Overview
 ```sh
 npm install
-gulp start
+gulp watch
 ```
