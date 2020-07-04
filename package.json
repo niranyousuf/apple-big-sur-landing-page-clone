@@ -1,13 +1,21 @@
 {
-  "name": "wppoolphotography",
+  "name": "sass_starter_pack",
   "version": "1.0.0",
-  "description": "starter project ",
-  "main": "index.js",
+  "description": "SASS quick starter pack",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niranyousuf/SASS_Starter_Pack.git"
+  },
   "author": "Niran Yousuf",
-  "license": "MIT",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/niranyousuf/SASS_Starter_Pack/issues"
+  },
+  "homepage": "https://github.com/niranyousuf/SASS_Starter_Pack#readme",
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
