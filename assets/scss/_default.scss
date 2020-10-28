@@ -1,0 +1,137 @@
+body {
+    width: 100%;
+    // font-family: "Open Sans", sans-serif;
+    font-family: 'SF Pro Display', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+    font-weight: 400;
+    background: #f5f5f7;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+article,
+span,
+a,
+p,
+ul,
+li,
+section,
+nav,
+header {
+    margin: 0;
+    padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+}
+h1 {
+    font-size: 90px;
+    letter-spacing: -7px;
+}
+h2 {
+    font-size: 64px;
+    line-height: 68px;
+    margin-bottom: 40px;
+}
+
+
+p {
+    color: #1d1d1f;
+}
+.pb-40 {
+    padding-bottom: 40px;
+}
+.pt-40 {
+    padding-top: 40px;
+}
+.pt-30 {
+    padding-top: 30px;
+}
+.pr-150 {
+    padding-right: 150px;
+}
+sup {
+    font-size: 10px;
+}
+
+.blue {
+    color: #0084cb;
+}
+.red {
+    color: #e02200;
+}
+.aqua {
+    color: #0b9e93;
+}
+.purple {
+    color: #6045ec;
+}
+.yellow {
+    color: #ffb300;
+}
+.green {
+    color: #009146;
+}
+.brown {
+    color: #e35416;
+}
+.white-color {
+    color: #fff !important;
+}
+.bg-blue {
+    background: #56c1ff;
+    color: #fff;
+}
+.bg-red {
+    background: #e94256;
+    color: #ffffff;
+}
+.bg-green {
+    background: #0b9e43;
+    color: #fff;
+}
+
+/*  Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1440px) {
+    h1 {
+        font-size: 72px;
+        letter-spacing: -7px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .pr-150 {
+        padding-right: 75px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .pr-150 {
+        padding-right: 0;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .pr-150 {
+        padding-right: 0;
+    }
+}

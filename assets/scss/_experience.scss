@@ -1,0 +1,766 @@
+#experience_heading {
+    > header {
+        width: 980px;
+        margin: 0 auto;
+        padding-top: 65px;
+        padding-right: 150px;
+        box-sizing: border-box;
+        > h2 {
+            color: #622aff;
+        }
+        > .content {
+            margin-top: 30px;
+            font-size: 28px;
+            line-height: 36px;
+            letter-spacing: 0.007em;
+            margin-bottom: 40px;
+            font-weight: 600;
+        }
+        > p {
+            > a {
+                font-size: 28px;
+                line-height: 36px;
+                color: #2997ff;
+                position: relative;
+                text-decoration: none;
+                padding-right: 35px;
+                margin-bottom: -40px;
+                &:hover {
+                    text-decoration: underline;
+                }
+                &::before {
+                    position: absolute;
+                    content: "\f105";
+                    font-family: Flaticon;
+                    font-size: 20px;
+                    right: 0;
+                    border-radius: 50%;
+                    height: 20px;
+                    width: 20px;
+                    padding: 0;
+                    margin: 0;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    font-weight: 600;
+                    top: 5px;
+                }
+            }
+        }
+    }
+}
+#experience {
+    padding-top: 120px;
+    > .sticky_section {
+        // height: 100vh;
+        width: 100%;
+        position: relative;
+        .experience_hero {
+            position: relative;
+            margin: 0 auto;
+            width: 1362px;
+            height: 790px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;
+            z-index: 1;
+            .ex_shadow {
+                position: absolute;
+                top: 0px;
+                left: -10px;
+                width: 1680px;
+                z-index: -1;
+            }
+            > .experience_screen {
+                position: absolute;
+                top: 43px;
+                left: 150px;
+                width: 1067px;
+            }
+            > .ex_screen {
+                position: absolute;
+                top: 43px;
+                left: 150px;
+                width: 1067px;
+                height: 670px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 100%;
+            }
+            > .ex_dock {
+                position: absolute;
+                bottom: 72px;
+                left: 237px;
+                width: 893px;
+                height: 70px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 100%;
+            }
+            > .ex_control {
+                position: absolute;
+                top: 44px;
+                right: 150px;
+                width: 291px;
+                height: 396px;
+                background-repeat: no-repeat;
+                background-position: 100% 100%;
+                background-size: 100%;
+            }
+            > .ex_notification {
+                position: absolute;
+                top: 5px;
+                right: 144px;
+                width: 250px;
+                height: 649px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 100%;
+            }
+        }
+        .features {
+            width: 980px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            top: 0;
+            .feature {
+                width: 30%;
+                position: absolute;
+                > .feature_image {
+                    position: absolute;
+                    visibility: hidden;
+                }
+                > h3 {
+                    font-size: 20px;
+                    line-height: 30px;
+                    font-weight: 600;
+                    color: #622aff;
+                }
+                > p {
+                    font-size: 19px;
+                    font-weight: 600;
+                    line-height: 28px;
+                }
+            }
+            .feature_one,
+            .feature_two {
+                left: 0;
+            }
+            .feature_three,
+            .feature_four {
+                right: 0;
+                width: 45%;
+            }
+        }
+    }
+}
+/*  Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1440px) {
+    #experience {
+        padding-top: 120px;
+        > .sticky_section {
+            // height: 100vh;
+            width: 100%;
+            position: relative;
+            .experience_hero {
+                width: 1170px;
+                height: 760px;
+                .ex_shadow {
+                    display: none;
+                }
+                > .experience_screen {
+                    top: 79px;
+                    left: 134px;
+                    width: 903px;
+                }
+                > .ex_screen {
+                    top: 43px;
+                    left: 135px;
+                    width: 902px;
+                    height: 635px;
+                }
+                > .ex_dock {
+                    bottom: 110px;
+                    left: 211px;
+                    width: 751px;
+                    height: 60px;
+                }
+                > .ex_control {
+                    top: 80px;
+                    right: 133px;
+                    width: 256px;
+                    height: 343px;
+                }
+                > .ex_notification {
+                    top: 86px;
+                    right: 130px;
+                    width: 193px;
+                    height: 416px;
+                }
+            }
+        }
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    #experience_heading {
+        > header {
+            width: 100%;
+            margin: 0 auto;
+            padding: 135px;
+            box-sizing: border-box;
+
+            > h2 {
+                font-size: 48px;
+                line-height: 52px;
+                padding-right: 200px;
+                margin-bottom: 30px;
+            }
+            > .content {
+                margin-top: 20px;
+                font-size: 21px;
+                line-height: 29px;
+                margin-bottom: 20px;
+                padding-right: 150px;
+            }
+            > p {
+                > a {
+                    font-size: 21px;
+                    &::before {
+                        font-size: 16px;
+                        top: 2px;
+                        right: 8px;
+                    }
+                }
+            }
+        }
+    }
+    #experience {
+        padding-top: 0;
+        position: relative;
+        overflow: hidden;
+        > .sticky_section {
+            width: 100%;
+            .experience_hero {
+                display: none;
+            }
+            .features {
+                width: 100%;
+                position: relative;
+                padding: 0 80px;
+                box-sizing: border-box;
+                display: block;
+                overflow: hidden;
+                .feature {
+                    height: 530px;
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-bottom: 200px;
+                    > .feature_image {
+                        position: absolute;
+                        visibility: visible;
+                        height: 100%;
+                        width: 100%;
+                        top: 0;
+                        left: 50%;
+                        background-position: 0 0;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+
+                        > .ex_screen {
+                            position: absolute;
+                            height: 453px;
+                            width: 531px;
+                            left: 109px;
+                            top: 29px;
+                            background-repeat: no-repeat;
+                            background-position: 0 0;
+                            background-size: cover;
+                        }
+                        > .ex_dock {
+                            position: absolute;
+                            height: 29px;
+                            width: 531px;
+                            left: 179px;
+                            bottom: 51px;
+                            background-repeat: no-repeat;
+                            background-position: 0 0;
+                            background-size: cover;
+                        }
+                    }
+                    > h3 {
+                        font-size: 19px;
+                        line-height: 29px;
+                    }
+                    > p {
+                        font-size: 17px;
+                        line-height: 25px;
+                    }
+                }
+                .feature_one,
+                .feature_two {
+                    padding-right: 45%;
+                }
+                .feature_three,
+                .feature_four {
+                    padding-left: 45%;
+                    > .feature_image {
+                        left: inherit;
+                        right: 50%;
+                        background-position: 100%;
+                        > .ex_screen {
+                            left: inherit;
+                            top: 25px;
+                            right: 109px;
+                        }
+                        > .ex_notification,
+                        > .ex_control {
+                            position: absolute;
+                            background-repeat: no-repeat;
+                            background-position: 100%;
+                            background-size: cover;
+                            height: 407px;
+                            width: 330px;
+                            top: 38px;
+                            right: 107px;
+                        }
+                        > .ex_notification {
+                            height: 332px;
+                            width: 151px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #experience_heading {
+        > header {
+            width: 100%;
+            margin: 0 auto;
+            padding: 100px 40px;
+            box-sizing: border-box;
+
+            > h2 {
+                font-size: 48px;
+                line-height: 52px;
+                padding-right: 150px;
+                margin-bottom: 30px;
+            }
+            > .content {
+                margin-top: 20px;
+                font-size: 21px;
+                line-height: 29px;
+                margin-bottom: 20px;
+                padding-right: 150px;
+            }
+            > p {
+                > a {
+                    font-size: 21px;
+                    &::before {
+                        font-size: 16px;
+                        top: 2px;
+                        right: 8px;
+                    }
+                }
+            }
+        }
+    }
+    #experience {
+        padding-top: 0;
+        position: relative;
+        overflow: hidden;
+        > .sticky_section {
+            width: 100%;
+            .experience_hero {
+                display: none;
+            }
+            .features {
+                width: 100%;
+                position: relative;
+                padding: 0 80px;
+                box-sizing: border-box;
+                display: block;
+                overflow: hidden;
+                .feature {
+                    height: 530px;
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-bottom: 200px;
+                    > .feature_image {
+                        position: absolute;
+                        visibility: visible;
+                        height: 100%;
+                        width: 100%;
+                        top: 0;
+                        left: 50%;
+                        background-position: 0 0;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+
+                        > .ex_screen {
+                            position: absolute;
+                            height: 453px;
+                            width: 531px;
+                            left: 109px;
+                            top: 29px;
+                            background-repeat: no-repeat;
+                            background-position: 0 0;
+                            background-size: cover;
+                        }
+                        > .ex_dock {
+                            position: absolute;
+                            height: 29px;
+                            width: 531px;
+                            left: 179px;
+                            bottom: 51px;
+                            background-repeat: no-repeat;
+                            background-position: 0 0;
+                            background-size: cover;
+                        }
+                    }
+                    > h3 {
+                        font-size: 19px;
+                        line-height: 29px;
+                    }
+                    > p {
+                        font-size: 17px;
+                        line-height: 25px;
+                    }
+                }
+                .feature_one,
+                .feature_two {
+                    padding-right: 30%;
+                    width: 50%;
+                }
+                .feature_three,
+                .feature_four {
+                    padding-left: 45%;
+                    width: 55%;
+                    > .feature_image {
+                        left: inherit;
+                        right: 50%;
+                        background-position: 100%;
+                        > .ex_screen {
+                            left: inherit;
+                            top: 25px;
+                            right: 109px;
+                        }
+                        > .ex_notification,
+                        > .ex_control {
+                            position: absolute;
+                            background-repeat: no-repeat;
+                            background-position: 100%;
+                            background-size: cover;
+                            height: 407px;
+                            width: 330px;
+                            top: 38px;
+                            right: 107px;
+                        }
+                        > .ex_notification {
+                            height: 332px;
+                            width: 151px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #experience_heading {
+        > header {
+            width: 100%;
+            margin: 0 auto;
+            padding: 100px 40px;
+            box-sizing: border-box;
+
+            > h2 {
+                font-size: 40px;
+                line-height: 44px;
+                margin-bottom: 30px;
+            }
+            > .content {
+                margin-top: 20px;
+                font-size: 19px;
+                line-height: 22px;
+                margin-bottom: 20px;
+            }
+            > p {
+                > a {
+                    font-size: 21px;
+                    &::before {
+                        font-size: 16px;
+                        top: 2px;
+                        right: 8px;
+                    }
+                }
+            }
+        }
+    }
+    #experience {
+        position: relative;
+        overflow: hidden;
+        padding-top: 0;
+        > .sticky_section {
+            width: 100%;
+            .experience_hero {
+                display: none;
+            }
+            .features {
+                width: 100%;
+                position: relative;
+                padding: 0 30px;
+                box-sizing: border-box;
+                display: block;
+                overflow: hidden;
+                .feature {
+                    height: 550px;
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: start;
+                    margin-bottom: 150px;
+                    > .feature_image {
+                        position: absolute;
+                        visibility: visible;
+                        height: 63%;
+                        width: 100%;
+                        top: inherit;
+                        bottom: 0;
+                        left: 30%;
+                        background-position: 0 0;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+
+                        > .ex_screen {
+                            position: absolute;
+                            height: 293px;
+                            width: 467px;
+                            left: 70px;
+                            top: 14px;
+                            background-repeat: no-repeat;
+                            background-position: 0 0;
+                            background-size: cover;
+                        }
+                        > .ex_dock {
+                            position: absolute;
+                            height: 20px;
+                            width: 374px;
+                            left: 108px;
+                            bottom: 41px;
+                            background-repeat: no-repeat;
+                            background-position: 0 0;
+                            background-size: cover;
+                        }
+                    }
+                    > h3 {
+                        font-size: 19px;
+                        line-height: 29px;
+                    }
+                    > p {
+                        font-size: 17px;
+                        line-height: 25px;
+                    }
+                }
+                .feature_one,
+                .feature_two {
+                    padding-right: 0;
+                    width: 100%;
+                }
+                .feature_three,
+                .feature_four {
+                    padding-left: 0;
+                    width: 100%;
+                    height: 550px;
+                    > .feature_image {
+                        left: inherit;
+                        background-position: 100%;
+                        bottom: -93px;
+                        right: 30%;
+                        > .ex_screen {
+                            left: inherit;
+                            top: 17px;
+                            height: 294px;
+                            width: 474px;
+                            position: absolute;
+                            right: 69px;
+                        }
+                        > .ex_notification,
+                        > .ex_control {
+                            position: absolute;
+                            background-repeat: no-repeat;
+                            background-position: 100%;
+                            background-size: cover;
+                            height: 173px;
+                            width: 141px;
+                            top: 24px;
+                            right: 69px;
+                        }
+                        > .ex_notification {
+                            height: 190px;
+                            width: 80px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    #experience_heading {
+        > header {
+            width: 100%;
+            margin: 0 auto;
+            padding: 100px 40px;
+            box-sizing: border-box;
+
+            > h2 {
+                font-size: 40px;
+                line-height: 44px;
+                margin-bottom: 30px;
+            }
+            > .content {
+                margin-top: 20px;
+                font-size: 19px;
+                line-height: 22px;
+                margin-bottom: 20px;
+            }
+            > p {
+                > a {
+                    font-size: 21px;
+                    &::before {
+                        font-size: 16px;
+                        top: 2px;
+                        right: 8px;
+                    }
+                }
+            }
+        }
+    }
+    #experience {
+        padding-top: 0;
+        > .sticky_section {
+            width: 100%;
+            .experience_hero {
+                display: none;
+            }
+            .features {
+                width: 100%;
+                position: relative;
+                padding: 0 30px;
+                box-sizing: border-box;
+                display: block;
+                overflow: hidden;
+                .feature {
+                    height: 440px;
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: start;
+                    margin-bottom: 150px;
+                    > .feature_image {
+                        position: absolute;
+                        visibility: visible;
+                        height: 63%;
+                        width: 100%;
+                        top: inherit;
+                        bottom: 0;
+                        left: 30px;
+                        background-position: 0 0;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+
+                        > .ex_screen {
+                            position: absolute;
+                            height: 232px;
+                            width: 363px;
+                            left: 56px;
+                            top: 14px;
+                            background-repeat: no-repeat;
+                            background-position: 0 0;
+                            background-size: cover;
+                        }
+                        > .ex_dock {
+                            position: absolute;
+                            height: 14px;
+                            width: 259px;
+                            left: 108px;
+                            bottom: 33px;
+                            background-repeat: no-repeat;
+                            background-position: 0 0;
+                            background-size: cover;
+                        }
+                    }
+                    > h3 {
+                        font-size: 19px;
+                        line-height: 29px;
+                    }
+                    > p {
+                        font-size: 17px;
+                        line-height: 25px;
+                    }
+                }
+                .feature_one,
+                .feature_two {
+                    padding-right: 0;
+                    width: 100%;
+                }
+                .feature_three,
+                .feature_four {
+                    padding-left: 0;
+                    width: 100%;
+                    height: 500px;
+                    > .feature_image {
+                        left: inherit;
+                        background-position: 100%;
+                        bottom: -93px;
+                        right: 30px;
+                        > .ex_screen {
+                            left: inherit;
+                            top: 17px;
+                            height: 268px;
+                            width: 438px;
+                            position: absolute;
+                            right: 62px;
+                        }
+                        > .ex_notification,
+                        > .ex_control {
+                            position: absolute;
+                            background-repeat: no-repeat;
+                            background-position: 100%;
+                            background-size: cover;
+                            height: 159px;
+                            width: 129px;
+                            top: 23px;
+                            right: 63px;
+                        }
+                        > .ex_notification {
+                            height: 190px;
+                            width: 80px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
